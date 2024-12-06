@@ -1,5 +1,7 @@
 """ Source code of SalaryDeductions.py """
 
+from grossSalary import Employee
+
 class SalaryDeduction:
-    def deduct(ded, value):
-        return ded - value 
+    def deduct(value):
+        return Employee.getSalary() - value 
